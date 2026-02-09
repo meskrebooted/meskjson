@@ -1,0 +1,7 @@
+C:\Users\meskaoui.22050\source\repos\hectorprevisioni\obj\Debug\hectorprevisioni.csproj.AssemblyReference.cache
+C:\Users\meskaoui.22050\source\repos\hectorprevisioni\obj\Debug\hectorprevisioni.Form1.resources
+C:\Users\meskaoui.22050\source\repos\hectorprevisioni\obj\Debug\meskjson.Properties.Resources.resources
+C:\Users\meskaoui.22050\source\repos\hectorprevisioni\obj\Debug\hectorprevisioni.csproj.GenerateResource.cache
+C:\Users\meskaoui.22050\source\repos\hectorprevisioni\obj\Debug\hectorprevisioni.csproj.CoreCompileInputs.cache
+C:\Users\meskaoui.22050\source\repos\hectorprevisioni\obj\Debug\meskjson.exe
+C:\Users\meskaoui.22050\source\repos\hectorprevisioni\obj\Debug\meskjson.pdb

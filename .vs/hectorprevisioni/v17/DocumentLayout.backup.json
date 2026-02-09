@@ -1,0 +1,141 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|meskjson.csproj|c:\\users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|meskjson.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|hectorprevisioni.csproj|c:\\users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\previsioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|hectorprevisioni.csproj|solutionrelative:previsioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|meskjson.csproj|C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\previsioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|meskjson.csproj|solutionrelative:previsioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|hectorprevisioni.csproj|c:\\users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|hectorprevisioni.csproj|solutionrelative:properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|hectorprevisioni.csproj|c:\\users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|hectorprevisioni.csproj|solutionrelative:properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|meskjson.csproj|C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|meskjson.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|meskjson.csproj|C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2815F51-8246-4D51-A8A6-8D4481F7BD99}|meskjson.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "Properties\\Resources.Designer.cs",
+              "ToolTip": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "Properties\\Resources.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T09:19:35.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T09:19:32.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "previsioni.cs",
+              "DocumentMoniker": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\previsioni.cs",
+              "RelativeDocumentMoniker": "previsioni.cs",
+              "ToolTip": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\previsioni.cs",
+              "RelativeToolTip": "previsioni.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T09:18:21.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T11:22:12.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAAAHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T09:34:01.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "previsioni.cs",
+              "DocumentMoniker": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\previsioni.cs",
+              "RelativeDocumentMoniker": "previsioni.cs",
+              "ToolTip": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\previsioni.cs",
+              "RelativeToolTip": "previsioni.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T10:22:24.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Progettazione]",
+              "DocumentMoniker": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\meskaoui.22050\\source\\repos\\hectorprevisioni\\Form1.cs [Progettazione]",
+              "RelativeToolTip": "Form1.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T10:13:56.212Z",
+              "EditorCaption": " [Progettazione]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

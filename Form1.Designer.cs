@@ -32,7 +32,7 @@
             this.txtJSON = new System.Windows.Forms.TextBox();
             this.btnCarica = new System.Windows.Forms.Button();
             this.txtTemperatura = new System.Windows.Forms.TextBox();
-            this.txtDescrizione = new System.Windows.Forms.TextBox();
+            this.cmbDescrizione = new System.Windows.Forms.ComboBox();
             this.lstPrevisioni = new System.Windows.Forms.ListBox();
             this.btnAggiungi = new System.Windows.Forms.Button();
             this.dtpData = new System.Windows.Forms.DateTimePicker();
@@ -44,6 +44,8 @@
             this.grpJSON = new System.Windows.Forms.GroupBox();
             this.grpDati = new System.Windows.Forms.GroupBox();
             this.lblTitolo = new System.Windows.Forms.Label();
+            this.lblTempMedia = new System.Windows.Forms.Label();
+            this.lblEmojiGrande = new System.Windows.Forms.Label();
             this.grpJSON.SuspendLayout();
             this.grpDati.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +57,7 @@
             this.btnSalva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalva.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnSalva.Location = new System.Drawing.Point(20, 486);
+            this.btnSalva.Location = new System.Drawing.Point(20, 550);
             this.btnSalva.Name = "btnSalva";
             this.btnSalva.Size = new System.Drawing.Size(220, 45);
             this.btnSalva.TabIndex = 0;
@@ -84,7 +86,7 @@
             this.btnCarica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCarica.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnCarica.Location = new System.Drawing.Point(250, 486);
+            this.btnCarica.Location = new System.Drawing.Point(250, 550);
             this.btnCarica.Name = "btnCarica";
             this.btnCarica.Size = new System.Drawing.Size(220, 45);
             this.btnCarica.TabIndex = 2;
@@ -103,30 +105,47 @@
             this.txtTemperatura.Size = new System.Drawing.Size(209, 27);
             this.txtTemperatura.TabIndex = 4;
             // 
-            // txtDescrizione
+            // cmbDescrizione
             // 
-            this.txtDescrizione.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.txtDescrizione.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDescrizione.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtDescrizione.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.txtDescrizione.Location = new System.Drawing.Point(135, 111);
-            this.txtDescrizione.Multiline = true;
-            this.txtDescrizione.Name = "txtDescrizione";
-            this.txtDescrizione.Size = new System.Drawing.Size(209, 50);
-            this.txtDescrizione.TabIndex = 5;
+            this.cmbDescrizione.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cmbDescrizione.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDescrizione.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbDescrizione.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.cmbDescrizione.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.cmbDescrizione.FormattingEnabled = true;
+            this.cmbDescrizione.Items.AddRange(new object[] {
+            "Soleggiato",
+            "Parzialmente Nuvoloso",
+            "Nuvoloso",
+            "Coperto",
+            "Piovoso",
+            "Pioggerella",
+            "Temporale",
+            "Tuoni",
+            "Nevoso",
+            "Nebbioso",
+            "Ventoso",
+            "Infernale",
+            "Sottozero"});
+            this.cmbDescrizione.Location = new System.Drawing.Point(135, 111);
+            this.cmbDescrizione.Name = "cmbDescrizione";
+            this.cmbDescrizione.Size = new System.Drawing.Size(209, 28);
+            this.cmbDescrizione.TabIndex = 5;
             // 
             // lstPrevisioni
             // 
             this.lstPrevisioni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.lstPrevisioni.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lstPrevisioni.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.lstPrevisioni.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lstPrevisioni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.lstPrevisioni.FormattingEnabled = true;
-            this.lstPrevisioni.ItemHeight = 17;
-            this.lstPrevisioni.Location = new System.Drawing.Point(20, 70);
+            this.lstPrevisioni.ItemHeight = 24;
+            this.lstPrevisioni.Location = new System.Drawing.Point(20, 110);
             this.lstPrevisioni.Name = "lstPrevisioni";
-            this.lstPrevisioni.Size = new System.Drawing.Size(450, 410);
+            this.lstPrevisioni.Size = new System.Drawing.Size(450, 370);
             this.lstPrevisioni.TabIndex = 6;
+            this.lstPrevisioni.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lstPrevisioni_DrawItem);
             this.lstPrevisioni.SelectedIndexChanged += new System.EventHandler(this.lstPrevisioni_SelectedIndexChanged);
             // 
             // btnAggiungi
@@ -136,7 +155,7 @@
             this.btnAggiungi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAggiungi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnAggiungi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnAggiungi.Location = new System.Drawing.Point(72, 170);
+            this.btnAggiungi.Location = new System.Drawing.Point(72, 150);
             this.btnAggiungi.Name = "btnAggiungi";
             this.btnAggiungi.Size = new System.Drawing.Size(95, 38);
             this.btnAggiungi.TabIndex = 7;
@@ -193,7 +212,7 @@
             this.btnModifica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModifica.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnModifica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnModifica.Location = new System.Drawing.Point(182, 170);
+            this.btnModifica.Location = new System.Drawing.Point(182, 150);
             this.btnModifica.Name = "btnModifica";
             this.btnModifica.Size = new System.Drawing.Size(95, 38);
             this.btnModifica.TabIndex = 11;
@@ -208,7 +227,7 @@
             this.btnElimina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnElimina.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnElimina.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnElimina.Location = new System.Drawing.Point(293, 170);
+            this.btnElimina.Location = new System.Drawing.Point(293, 150);
             this.btnElimina.Name = "btnElimina";
             this.btnElimina.Size = new System.Drawing.Size(95, 38);
             this.btnElimina.TabIndex = 12;
@@ -236,7 +255,7 @@
             this.grpDati.Controls.Add(this.dtpData);
             this.grpDati.Controls.Add(this.txtTemperatura);
             this.grpDati.Controls.Add(this.lblTemperatura);
-            this.grpDati.Controls.Add(this.txtDescrizione);
+            this.grpDati.Controls.Add(this.cmbDescrizione);
             this.grpDati.Controls.Add(this.lblDescrizione);
             this.grpDati.Controls.Add(this.btnAggiungi);
             this.grpDati.Controls.Add(this.btnElimina);
@@ -262,12 +281,37 @@
             this.lblTitolo.TabIndex = 16;
             this.lblTitolo.Text = "🌤️ Gestione Previsioni Meteo";
             // 
+            // lblTempMedia
+            // 
+            this.lblTempMedia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.lblTempMedia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTempMedia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblTempMedia.Location = new System.Drawing.Point(20, 70);
+            this.lblTempMedia.Name = "lblTempMedia";
+            this.lblTempMedia.Size = new System.Drawing.Size(450, 30);
+            this.lblTempMedia.TabIndex = 17;
+            this.lblTempMedia.Text = "📊 Temperatura Media: --";
+            this.lblTempMedia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblEmojiGrande
+            // 
+            this.lblEmojiGrande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.lblEmojiGrande.Font = new System.Drawing.Font("Segoe UI Emoji", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmojiGrande.Location = new System.Drawing.Point(20, 490);
+            this.lblEmojiGrande.Name = "lblEmojiGrande";
+            this.lblEmojiGrande.Size = new System.Drawing.Size(450, 50);
+            this.lblEmojiGrande.TabIndex = 19;
+            this.lblEmojiGrande.Text = "🌤️";
+            this.lblEmojiGrande.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(945, 640);
+            this.ClientSize = new System.Drawing.Size(945, 610);
+            this.Controls.Add(this.lblEmojiGrande);
+            this.Controls.Add(this.lblTempMedia);
             this.Controls.Add(this.lblTitolo);
             this.Controls.Add(this.grpDati);
             this.Controls.Add(this.grpJSON);
@@ -277,6 +321,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MeskJSON - Gestione Previsioni Meteo";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grpJSON.ResumeLayout(false);
             this.grpJSON.PerformLayout();
@@ -294,7 +339,7 @@
         private System.Windows.Forms.Button btnCarica;
         private System.Windows.Forms.DateTimePicker dtpData;
         private System.Windows.Forms.TextBox txtTemperatura;
-        private System.Windows.Forms.TextBox txtDescrizione;
+        private System.Windows.Forms.ComboBox cmbDescrizione;
         private System.Windows.Forms.ListBox lstPrevisioni;
         private System.Windows.Forms.Button btnAggiungi;
         private System.Windows.Forms.Label lblData;
@@ -305,6 +350,8 @@
         private System.Windows.Forms.GroupBox grpJSON;
         private System.Windows.Forms.GroupBox grpDati;
         private System.Windows.Forms.Label lblTitolo;
+        private System.Windows.Forms.Label lblTempMedia;
+        private System.Windows.Forms.Label lblEmojiGrande;
     }
 }
 

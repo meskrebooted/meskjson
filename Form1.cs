@@ -2,11 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Text.Json;
+using System.Runtime.InteropServices;
 
 namespace meskjson
 {
     public partial class Form1 : Form
     {
+        [DllImport("dwmapi.dll")]
+        private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
+
+        private const int DWMWA_USE_IMMERSIVE_DARK_MODE = 20;
+
         public List<previsioni> elencoprev;
         
         public Form1()
@@ -14,6 +20,17 @@ namespace meskjson
             InitializeComponent();
             elencoprev = new List<previsioni>();
             AggiornaLista();
+            AbilitaBordoScuro();
+        }
+
+        private void AbilitaBordoScuro()
+        {
+            try
+            {
+                int useImmersiveDarkMode = 1;
+                DwmSetWindowAttribute(this.Handle, DWMWA_USE_IMMERSIVE_DARK_MODE, ref useImmersiveDarkMode, sizeof(int));
+            }
+            catch { }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -150,11 +167,7 @@ namespace meskjson
             }
         }
 
-        private void btnNuovo_Click(object sender, EventArgs e)
-        {
-            PulisciCampi();
-            lstPrevisioni.SelectedIndex = -1;
-        }
+
 
         private bool ValidaCampi()
         {

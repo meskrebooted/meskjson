@@ -112,30 +112,6 @@ namespace meskjson
                 dtpData.Value = p.Date.DateTime;
                 txtTemperatura.Text = p.TemperatureCelsius.ToString();
                 cmbDescrizione.Text = p.Summary;
-                
-                string desc = p.Summary.ToLower();
-                if (desc.Contains("infernale") || desc.Contains("hell"))
-                    lblEmojiGrande.Text = "🔥";
-                else if (desc.Contains("sottozero") || desc.Contains("subzero"))
-                    lblEmojiGrande.Text = "🥶";
-                else if (desc.Contains("soleggiato") || desc.Contains("sole") || desc.Contains("sunny") || desc.Contains("clear"))
-                    lblEmojiGrande.Text = "☀️";
-                else if (desc.Contains("nuvoloso") || desc.Contains("nuvol") || desc.Contains("cloudy") || desc.Contains("cloud") || desc.Contains("coperto") || desc.Contains("overcast"))
-                    lblEmojiGrande.Text = "☁️";
-                else if (desc.Contains("parzial") || desc.Contains("partly") || desc.Contains("partial"))
-                    lblEmojiGrande.Text = "⛅";
-                else if (desc.Contains("piogg") || desc.Contains("rain") || desc.Contains("drizzle"))
-                    lblEmojiGrande.Text = "🌧️";
-                else if (desc.Contains("temporal") || desc.Contains("tuoni") || desc.Contains("storm") || desc.Contains("thunder"))
-                    lblEmojiGrande.Text = "⛈️";
-                else if (desc.Contains("nev") || desc.Contains("snow"))
-                    lblEmojiGrande.Text = "❄️";
-                else if (desc.Contains("nebbia") || desc.Contains("fog") || desc.Contains("mist"))
-                    lblEmojiGrande.Text = "🌫️";
-                else if (desc.Contains("vento") || desc.Contains("vent") || desc.Contains("wind"))
-                    lblEmojiGrande.Text = "💨";
-                else
-                    lblEmojiGrande.Text = "🌤️";
             }
         }
 

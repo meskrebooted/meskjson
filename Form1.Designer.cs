@@ -45,7 +45,6 @@
             this.grpDati = new System.Windows.Forms.GroupBox();
             this.lblTitolo = new System.Windows.Forms.Label();
             this.lblTempMedia = new System.Windows.Forms.Label();
-            this.lblEmojiGrande = new System.Windows.Forms.Label();
             this.grpJSON.SuspendLayout();
             this.grpDati.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +56,7 @@
             this.btnSalva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalva.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnSalva.Location = new System.Drawing.Point(20, 550);
+            this.btnSalva.Location = new System.Drawing.Point(22, 503);
             this.btnSalva.Name = "btnSalva";
             this.btnSalva.Size = new System.Drawing.Size(220, 45);
             this.btnSalva.TabIndex = 0;
@@ -86,7 +85,7 @@
             this.btnCarica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCarica.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnCarica.Location = new System.Drawing.Point(250, 550);
+            this.btnCarica.Location = new System.Drawing.Point(250, 503);
             this.btnCarica.Name = "btnCarica";
             this.btnCarica.Size = new System.Drawing.Size(220, 45);
             this.btnCarica.TabIndex = 2;
@@ -143,7 +142,7 @@
             this.lstPrevisioni.ItemHeight = 24;
             this.lstPrevisioni.Location = new System.Drawing.Point(20, 110);
             this.lstPrevisioni.Name = "lstPrevisioni";
-            this.lstPrevisioni.Size = new System.Drawing.Size(450, 370);
+            this.lstPrevisioni.Size = new System.Drawing.Size(450, 362);
             this.lstPrevisioni.TabIndex = 6;
             this.lstPrevisioni.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lstPrevisioni_DrawItem);
             this.lstPrevisioni.SelectedIndexChanged += new System.EventHandler(this.lstPrevisioni_SelectedIndexChanged);
@@ -293,24 +292,12 @@
             this.lblTempMedia.Text = "📊 Temperatura Media: --";
             this.lblTempMedia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblEmojiGrande
-            // 
-            this.lblEmojiGrande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.lblEmojiGrande.Font = new System.Drawing.Font("Segoe UI Emoji", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmojiGrande.Location = new System.Drawing.Point(20, 490);
-            this.lblEmojiGrande.Name = "lblEmojiGrande";
-            this.lblEmojiGrande.Size = new System.Drawing.Size(450, 50);
-            this.lblEmojiGrande.TabIndex = 19;
-            this.lblEmojiGrande.Text = "🌤️";
-            this.lblEmojiGrande.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(945, 610);
-            this.Controls.Add(this.lblEmojiGrande);
+            this.ClientSize = new System.Drawing.Size(945, 634);
             this.Controls.Add(this.lblTempMedia);
             this.Controls.Add(this.lblTitolo);
             this.Controls.Add(this.grpDati);
@@ -351,7 +338,6 @@
         private System.Windows.Forms.GroupBox grpDati;
         private System.Windows.Forms.Label lblTitolo;
         private System.Windows.Forms.Label lblTempMedia;
-        private System.Windows.Forms.Label lblEmojiGrande;
     }
 }
 
